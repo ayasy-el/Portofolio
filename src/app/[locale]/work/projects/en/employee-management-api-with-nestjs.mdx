@@ -1,0 +1,95 @@
+---
+title: "Employee Management API With Nest Js"
+publishedAt: "2024-08-23"
+summary: "An efficient and scalable API built with NestJS for managing employee data. This project uses Prisma for database management and PostgreSQL as the default database. 🚀"
+images:
+  - "https://github.com/user-attachments/assets/26b59139-b8ed-48a7-bd5f-b569c4900abe"
+
+team:
+  - name: "Ilyasa Ayasy"
+    role: "Software Engineer"
+    avatar: "/images/profile.png"
+    linkedIn: "https://www.linkedin.com/in/ilyasa-ayasy-18bbb1298/"
+---
+
+# 🏢 Employee Management API
+
+[Link Project](https://github.com/ayasy-el/NestStaff)
+
+An efficient and scalable API built with [NestJS](https://nestjs.com) for managing employee data. This project uses Prisma for database management and PostgreSQL as the default database. 🚀
+
+## ✨ Features
+
+- CRUD operations for employees 👩‍💼👨‍💼
+- PostgreSQL as the database 🗄️
+- Prisma ORM for seamless database interactions 🧑‍💻
+- Global exception handling with custom filters 🎯
+- Swagger API documentation 📑
+
+## 🛠️ Project Setup
+
+```bash
+# Install dependencies
+$ pnpm install
+
+# Run database migrations
+$ pnpm prisma migrate dev
+
+# Seed the database
+$ pnpm prisma db seed
+```
+
+## 🚀 Running the Project
+
+```bash
+# Start the server (development)
+$ pnpm run start
+
+# Start the server in watch mode
+$ pnpm run start:dev
+
+# Start the server (production)
+$ pnpm run start:prod
+```
+
+## 🧪 Running Tests
+
+```bash
+# Unit tests
+$ pnpm run test
+
+# End-to-end tests
+$ pnpm run test:e2e
+
+# Test coverage
+$ pnpm run test:cov
+```
+
+## 📚 API Endpoints
+
+You can explore the API documentation using Swagger after starting the server:
+
+```
+GET /employees        -> Retrieve all employees
+POST /employees       -> Create a new employee
+GET /employees/:id    -> Retrieve employee by ID
+PATCH /employees/:id  -> Update employee by ID
+DELETE /employees/:id -> Remove employee by ID
+```
+
+Access the Swagger UI at: [http://localhost:3000/swagger](http://localhost:3000/swagger)
+
+## 📂 Resources
+
+- [NestJS Documentation](https://docs.nestjs.com)
+- [Prisma Documentation](https://www.prisma.io/docs)
+- [Swagger Docs](https://swagger.io/docs/)
+- [Prisma Generator NestJs DTO](https://github.com/Brakebein/prisma-generator-nestjs-dto)
+
+## ❤️ Support
+
+If you find this project helpful, consider giving it a ⭐ or contributing!
+
+## 📝 License
+
+This project is [MIT licensed](./LICENSE).

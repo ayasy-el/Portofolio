@@ -1,0 +1,133 @@
+---
+title: "Digital Book Library Dashboard"
+publishedAt: "2023-11-30"
+summary: "Digital Book Library Dashboard is a web application designed to assist librarians in managing book inventory and monitoring member activity in a library"
+images:
+  - "/images/projects/digital_library.png"
+  - "/images/projects/loginbooklib.png"
+  - "/images/projects/addbook.png"
+
+team:
+  - name: "Ilyasa Ayasy"
+    role: "Software Engineer"
+    avatar: "/images/profile.png"
+    linkedIn: "https://www.linkedin.com/in/ilyasa-ayasy-18bbb1298/"
+---
+
+# Digital Book Library Dashboard
+
+[Link To Project](https://github.com/ayasy-el/LibraryDashboard-React)
+
+## Project Overview
+
+**Digital Book Library Dashboard** is a web application designed to assist librarians in managing book inventory and monitoring member activity in a library. The application supports basic CRUD (Create, Read, Update, Delete) operations for books and members, making it easy for librarians to manage their tasks efficiently. It was built using modern web development technologies such as **React JS**, **Vite**, **Bootstrap 5**, **PHP**, **MySQL**, and **XAMPP**.
+
+## Objectives
+
+This project aims to:
+
+1. Develop a functioning website using **Visual Studio Code** and **XAMPP**.
+2. Apply the programming languages and frameworks learned throughout the course.
+3. Implement a CRUD system to manage library books and members.
+
+## Technologies and Tools
+
+- **Visual Studio Code**: A powerful code editor for editing and managing the project codebase.
+- **XAMPP**: A local web server that includes components like Apache, MySQL, and PHP for testing the application offline.
+- **PHP**: A server-side programming language used for backend development, handling API requests, and connecting to the MySQL database.
+- **React JS**: A JavaScript library for building modern, interactive user interfaces (UI) for the dashboard.
+- **Vite**: A fast frontend build tool and development environment.
+- **NPM**: Node Package Manager for managing JavaScript dependencies and packages.
+- **Bootstrap 5**: A frontend framework used for designing responsive and user-friendly web interfaces.
+- **MySQL**: A relational database system used for storing and managing book and member data.
+
+## Features
+
+1. **User Authentication**: Secure login and registration system.
+   ![login page](/images/projects/loginbooklib.png)
+2. **Dashboard**: A central view displaying an overview of library statistics and available actions.
+   ![dashboard page](/images/projects/digital_library.png)
+3. **Book Management**: Allows adding, editing, deleting, and viewing book details.
+   ![Add Book](/images/projects/addbook.png)
+   ![book management](/images/projects/bookmanagement.png)
+4. **Member Management**: Admins can manage library members and view borrowing history.
+   ![Members management](/images/projects/members.png)
+5. **Book Lending**: Track which books are currently loaned out and by whom.
+   ![lend book](/images/projects/lendbook.png)
+
+## CRUD Concept
+
+The application implements the basic CRUD operations:
+
+- **Create**: Add new books or members to the library system.
+- **Read**: Retrieve and display data on books and members.
+- **Update**: Modify the details of books or members.
+- **Delete**: Remove books or members from the system.
+
+## API Integration
+
+The application uses **PHP** APIs to handle requests from the **React JS** frontend. These APIs interact with the **MySQL** database to perform CRUD operations, returning the results in **JSON** format. This architecture ensures that the frontend and backend are separated, enhancing security and performance.
+
+## Installation Guide
+
+### Prerequisites
+
+- Ensure **XAMPP**, **Node.js**, and **NPM** are installed on your local machine.
+
+### Setup Instructions
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/digital-library-dashboard.git
+   cd digital-library-dashboard
+   ```
+
+2. Install frontend dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Set up the backend (PHP and MySQL):
+
+   - Place the backend PHP files in the **htdocs** folder of your **XAMPP** installation.
+   - Create a **MySQL** database and import the provided **.sql** file.
+
+4. Run the frontend development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Start XAMPP to run the Apache and MySQL servers, then access the dashboard via:
+   ```
+   http://localhost:3000
+   ```
+
+## Folder Structure
+
+```
+├── public/
+│   └── index.html    # HTML template for React
+├── src/
+│   ├── components/   # React components
+│   ├── pages/        # Application pages (Dashboard, Books, Members)
+│   └── App.js        # Main React file
+├── backend/          # PHP API and database-related files (to be placed in XAMPP htdocs)
+└── package.json      # Project metadata and dependencies
+```
+
+## Database Structure
+
+The application uses **MySQL** to store data for:
+
+1. **Books**: Contains details like title, author, and availability status.
+2. **Members**: Stores member details and borrowing history.
+
+## Testing with Postman
+
+- **Auth.php**: Login and registration testing.
+- **Books.php**: Search, query, and exact search functionality.
+- **Members.php**: Member-related API tests (search, add, update, delete).
+- **Register.php**: Registration success and failure cases.

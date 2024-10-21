@@ -1,0 +1,104 @@
+---
+title: "Restaurant Ordering System With C and Mysql"
+publishedAt: "2024-6-1"
+summary: "This project is a Restaurant Ordering System designed to streamline the ordering process in restaurants. It involves the use of C/C++, MySQL, Makefile, and CMake. The system integrates multiple features such as menu management, order processing, and employee management, with a simple and user-friendly interface."
+images:
+  - "/images/projects/POS_C.png"
+
+team:
+  - name: "Ilyasa Ayasy"
+    role: "Software Engineer"
+    avatar: "/images/profile.png"
+    linkedIn: "https://www.linkedin.com/in/ilyasa-ayasy-18bbb1298/"
+---
+
+# Restaurant Ordering System
+
+[Link To Project](https://github.com/ayasy-el/Restaurant_Cmysql)
+
+## Project Overview
+
+This project is a **Restaurant Ordering System** designed to streamline the ordering process in restaurants. It involves the use of **C/C++**, **MySQL**, **Makefile**, and **CMake**. The system integrates multiple features such as menu management, order processing, and employee management, with a simple and user-friendly interface.
+
+## Objectives
+
+The primary goals of this project are:
+
+1. Understand the functionality of a restaurant ordering system involving **functions**, **arrays**, **strings**, and **pointers**.
+2. Design and implement the system to manage menu, customer orders, total pricing, and order history.
+3. Utilize **C/C++**, **MySQL**, **Makefile**, and **CMake** for development and deployment.
+
+## Tools and Technologies
+
+- **C/C++**: A general-purpose programming language with efficient memory manipulation and portability.
+- **MySQL**: An open-source relational database management system for handling menu data, customer orders, and order history.
+- **Makefile**: Automates the build process, allowing for efficient compilation and execution.
+- **CMake**: A cross-platform tool for automating the build process.
+
+## Application Features
+
+1. **Login Page**: Secure login system for user authentication.
+2. **POS Main Menu**: Main interface for processing customer orders.
+3. **Add Orders**: Functionality to add customer orders.
+4. **Manage Menu**: Admin can add, edit, or remove items from the menu.
+5. **Order History**: Displays all past orders.
+6. **EMS (Employee Management System)**: Allows adding, editing, and deleting employee records.
+
+## Database Structure
+
+- The system uses **MySQL** to manage restaurant data such as menu items, customer orders, and employee records.
+
+![database_structure](/images/projects/database.png)
+
+## Installation Guide
+
+### For Windows:
+
+Ensure **GCC**, **Makefile**, **CMake**, and **MySQL** are installed.
+
+### For Linux (Debian Based):
+
+Ensure **mysqlclient** is installed by running:
+
+```bash
+sudo apt install libmysqlclient-dev
+```
+
+### Build Process:
+
+1. Build both the restaurant and employee systems:
+   ```bash
+   make
+   ```
+2. To build and run the **employee management system**:
+   ```bash
+   make k
+   make run-k
+   ```
+3. To build and run the **restaurant ordering system**:
+   ```bash
+   make r
+   make run-r
+   ```
+
+## Project Directory Structure
+
+```bash
+├── build/
+│   ├── CMakeFiles/
+│   └── dist/         # Contains compiled executables
+├── include/          # Header files for external libraries (Windows)
+├── lib/              # External libraries (Windows)
+├── src/              # C source code
+```
+
+## Analysis
+
+The project demonstrates the implementation of a **Point of Sale (POS)** system for restaurants using **C/C++**. It efficiently manages menu items, orders, and employee data with the help of **MySQL** for database management. The integration of **Makefile** automates the build process, and **CMake** ensures cross-platform compatibility.
+
+Key programming concepts used:
+
+- **Arrays**: Store customer order data.
+- **Functions**: Calculate total order prices and manage customer data.
+- **Strings**: Store customer names and menu items.
+- **Pointers**: Access data stored in memory.
